@@ -1,2 +1,5 @@
 # PresburgerArithmatic
-decidability algo for Presburger arithmetic
+
+This is a rust implementation of the decidability algorithm for Presburger Arithmetic using Quantifier Elimination.
+
+
