@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use crate::utils::*;
+use crate::utils::bx;
 
 #[derive(Clone)]
 pub enum Term {

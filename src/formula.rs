@@ -1,7 +1,7 @@
 #![allow(dead_code)]
 
 use crate::term::Term;
-use crate::utils::*;
+use crate::utils::bx;
 
 pub enum For {
     Lt(Term, Term),
