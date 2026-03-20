@@ -35,7 +35,7 @@ impl Term {
         }
     }
 
-    fn cmbn(t1: Term, t2: Term) -> Term {
+    pub fn cmbn(t1: Term, t2: Term) -> Term {
         match (t1.clone(), t2.clone()) {
             // Add and Add
             (A(e1, e2), A(f1, f2)) => match (*e1.clone(), *f1.clone()) {
@@ -130,5 +130,9 @@ impl Term {
             A(t1, t2) => Term::cmbn(t1.ordr(), t2.ordr()),
             x => x,
         }
+    }
+
+    pub fn num_to_term(num : u32) -> Term {
+        if num == 0 { O } else { Succ(bx(Term::num_to_term(num-1))) }
     }
 }
